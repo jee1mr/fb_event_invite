@@ -18,7 +18,7 @@ json_data=open('fb_friends.json')
 
 data = json.load(json_data)
 
-num_of_friends= len(data["data"])
+num_of_friends= int(len(data["data"]))
 
 
 f= open('fb_invite','w')
@@ -35,7 +35,5 @@ for i in range(0,num_of_friends):
 fullurl= invite_url+arr+"&&access_token="+str(access)	
 
 req = urllib2.Request(fullurl)
-
-
 
 
