@@ -23,7 +23,7 @@ num_of_friends= len(data["data"])
 
 f= open('fb_invite','w')
 
-event_id = str(sys.argv[1])
+event_id = str(sys.argv[2])
 
 invite_url = "https://graph.facebook.com/v1.0/"+event_id+"/invited?users="
 arr=""
